@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcakes</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to the Cupcake API</h1>
+
+    <h2>Add a new Cupcake:</h2>
+    <form id="new-cupcake-form">
+        <label for="flavor">Flavor:</label><br>
+        <input type="text" id="flavor" name="flavor"><br>
+
+        <input type="text" id="size" name="size"><br>
+
+        <label for="rating">Rating:</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="10"><br>
+
+        <label for="image">Image URL:</label><br>
+        <input type="text" id="image" name="image"><br>
+
+        <input type="submit" value="Add Cupcake">
+    </form>
+
+    
+
+    <h2>List of Cupcakes:</h2>
+    <ul id="cupcakes-list">
+
+    </ul>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
